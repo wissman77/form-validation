@@ -37,7 +37,7 @@ form {
   background: #e8e3e3;
   padding: 10px;
   border-radius: 10px;
-  min-width: 500px;
+  max-width: 500px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
@@ -91,4 +91,10 @@ input:invalid {
 .error {
   font-size: 0.8rem;
   color: #cd4242;
+}
+
+@media screen and(max-width: 500px) {
+  form {
+    max-width: 300px;
+  }
 }
