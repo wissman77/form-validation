@@ -1,4 +1,5 @@
 import './style.css';
+import icon from './icon.png';
 
 const validate = (() => {
   const form = document.querySelector('form');
@@ -90,4 +91,15 @@ const validate = (() => {
       document.querySelector('h1').textContent =
         'Validation Form - Validated ✋✋';
   });
+
+  // add favicon
+  function addFavicon() {
+    const link = document.createElement('link');
+    link.rel = 'shortcut icon';
+    link.type = 'image/png';
+    link.href = icon;
+    document.head.appendChild(link);
+  }
+
+  addFavicon();
 })();
