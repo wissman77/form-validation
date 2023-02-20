@@ -12,6 +12,14 @@ input {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background: linear-gradient(
+    to right,
+    rgba(211, 247, 144, 0.8),
+    rgba(129, 222, 250, 0.8)
+  );
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -30,6 +38,8 @@ form {
   padding: 10px;
   border-radius: 10px;
   min-width: 500px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .form-control {
